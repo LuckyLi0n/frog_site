@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %} News {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Лягушачьи новости</h1>
+        <p> Это страничка с САМЫМИ актуальными новостями про очень уставших лягушечек, которые пытаются стать программистами</p>
+        {% for el in values%}
+            <p>{{el}}</p>
+        {% endfor %}
+        <button class="btn btn-warning"> На страницу про автора </button>
+    </div>
+    
+{% endblock %}
