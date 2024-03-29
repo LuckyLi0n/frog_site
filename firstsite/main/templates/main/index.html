@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-</head>
-<body>
+{% extends 'mail/layout.html' %}
+
+
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
     <h1>Главная страницца нашего сайта</h1>
     <p>Смотри это главная страница нашего нового сайта</p>
-</body>
-</html>
+{% endblock %}
