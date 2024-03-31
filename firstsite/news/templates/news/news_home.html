@@ -7,10 +7,18 @@
     <div class="features">
         <h1>Лягушачьи новости</h1>
         <p> Это страничка с САМЫМИ актуальными новостями про очень уставших лягушечек, которые пытаются стать программистами</p>
-        {% for el in values%}
-            <p>{{el}}</p>
-        {% endfor %}
+        {% if news%}
+            {% for el in news%}
+                <div class="alert alert-warning"> 
+                <h3>{{ el.title}}</h3>
+                <p>{{ el.anons }}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>Сейчас у жабок нет новостей, но скоро мы их напишем </p>
+        {%endif%}
         <button class="btn btn-warning"> На страницу про автора </button>
     </div>
     
+
 {% endblock %}

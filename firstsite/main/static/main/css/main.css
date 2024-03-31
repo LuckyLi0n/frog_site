@@ -58,3 +58,18 @@ main .features{
 main .features h1 {font-size: 50px; color: dodgerblue;}
 
 main .features p {max-width: 400px; margin: 20px auto;}
+
+.alert-warning {
+    background-color: rgb(147, 197, 240);
+    float: left;
+    clear: both;
+    width: 75%;
+    margin: 16%;
+    text-align: center;
+}
+
+form {
+    margin-left: 16%;
+    width: 75%;
+    margin-top: 50px;
+}
