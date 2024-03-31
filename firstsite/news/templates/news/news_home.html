@@ -12,12 +12,13 @@
                 <div class="alert alert-warning"> 
                 <h3>{{ el.title}}</h3>
                 <p>{{ el.anons }}</p>
+                <a href="{% url 'news_detail' el.id %}" class="btn btn-warning"> Читать детальнее </a>
             </div>
             {% endfor %}
         {% else %}
             <p>Сейчас у жабок нет новостей, но скоро мы их напишем </p>
         {%endif%}
-        <button class="btn btn-warning"> На страницу про автора </button>
+        <a href="{% url 'home' %}" class="btn btn-danger"> На главную </a>
     </div>
     
 

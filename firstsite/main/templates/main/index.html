@@ -10,7 +10,7 @@
         {% for el in values%}
             <p>{{el}}</p>
         {% endfor %}
-        <button class="btn btn-warning"> На страницу про автора</button>
+        <a href="{% url 'about' %}" class="btn btn-warning"> На страницу про автора</a>
     </div>
     
 {% endblock %}
